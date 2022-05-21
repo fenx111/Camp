@@ -18,7 +18,9 @@ import NotFoundScreen from '../screens/NotFoundScreen';
 import TabOneScreen from '../screens/Account';
 import NewsFeed from '../screens/NewsFeed';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
+import MedicalCard from '../screens/MedicalCard';
 import LinkingConfiguration from './LinkingConfiguration';
+import MarkActivities from '../screens/MarkActivities';
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
   return (
@@ -44,6 +46,8 @@ function RootNavigator() {
       <Stack.Group screenOptions={{ presentation: 'card' }}>
         <Stack.Screen name="Modal" options={{ title: "Банковский счет" }} component={ModalScreen} />
         <Stack.Screen name="NewsDetails" options={{ title: "Описание мероприятия" }} component={NewsDetails} />
+        <Stack.Screen name="MedicalCard" options={{ title: "Медицинская карта" }} component={MedicalCard} />
+        <Stack.Screen name="MarkActivities" options={{ title: "Оценивание событий" }} component={MarkActivities} />
       </Stack.Group>
     </Stack.Navigator>
   );

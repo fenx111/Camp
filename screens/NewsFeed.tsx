@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native';
 
-import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import { ImageBackground, FlatList, Image, ScrollView, Pressable } from 'react-native';
 import Item from '../components/PopularItem';
@@ -20,7 +19,7 @@ export default function TabTwoScreen({ navigation }: RootTabScreenProps<'TabTwo'
     <View style={styles.container}>
       {/* <ImageBackground source={require('../assets/images/ohuennyigradient.png')} resizeMode="cover" style={styles.image_fon}> */}
       <ScrollView>
-        <ScrollView horizontal={true}>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <Tag title='Развлекательные'></Tag>
           <Tag title='Спортивные'></Tag>
           <Tag title='Экскурсии'></Tag>

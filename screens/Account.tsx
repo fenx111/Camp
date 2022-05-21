@@ -1,6 +1,5 @@
 import { StyleSheet, ScrollView, Pressable } from 'react-native';
 import { useState } from 'react';
-import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
 import { Image } from 'react-native';
@@ -10,7 +9,13 @@ import SettingsRow from '../components/SettingsRow';
 import CustomButton from '../components/CustomButton';
 
 export default function Account({ navigation }: RootTabScreenProps<'TabOne'>) {
+  const openReview = () => {
+    navigation.push('MarkActivities')
+  }
 
+  const openMedicineCard = () => {
+    navigation.push('MedicalCard')
+  }
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -43,9 +48,13 @@ export default function Account({ navigation }: RootTabScreenProps<'TabOne'>) {
         </View>
         <View>
           <Text style={{ marginLeft: 16, marginTop: 15, fontSize: 20, fontWeight: 'bold', color: 'black' }}>Настройки</Text>
-          <SettingsRow name={'Оценка мероприятий'} action={console.log}></SettingsRow>
-          <SettingsRow name={'Конфиденциальность'} action={console.log}></SettingsRow>
-          <SettingsRow name={'Медкарта'} action={console.log}></SettingsRow>
+          <View style={{paddingTop: 15, paddingBottom: 15, paddingLeft: 20, paddingRight: 20, borderRadius: 20, backgroundColor: '#fff'}}>
+            <SettingsRow name={'Оценка мероприятий'} action={openReview}></SettingsRow>
+            <View style={{height: 1, backgroundColor: 'lightgray', opacity: 0.4}}></View>
+            <SettingsRow name={'Конфиденциальность'} action={console.log}></SettingsRow>
+            <View style={{height: 1, backgroundColor: 'lightgray', opacity: 0.4}}></View>
+            <SettingsRow name={'Медкарта'} action={openMedicineCard}></SettingsRow>
+          </View>
 
         </View>
       </ScrollView>

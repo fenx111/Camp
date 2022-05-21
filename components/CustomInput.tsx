@@ -2,10 +2,10 @@ import React from "react";
 
 import { View, Text, TextInput, StyleSheet, Image } from "react-native";
 
-export default function CustomInput({ value, setValue, placeholder, secureTextEntry }: { value: string, setValue: ((text: string) => void), placeholder: string, secureTextEntry: boolean }) {
+export default function CustomInput({ value, setValue, placeholder, secureTextEntry }:
+    { value: string, setValue: ((text: string) => void), placeholder: string, secureTextEntry: boolean }) {
     return (
         <View style={styles.container}>
-
             <TextInput
                 style={styles.input}
                 value={value}

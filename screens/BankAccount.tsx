@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { Platform, StyleSheet, TextInput, Image } from 'react-native';
 
-import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import TransactionCell from '../components/TransactionCell';
 
@@ -19,7 +18,7 @@ export default function BankAccount() {
         <View style={{ height: 150, justifyContent: 'center', alignItems: 'center' }}>
           <View style={{ width: '90%', height: '80%', borderRadius: 15, backgroundColor: 'whitesmoke', justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'row' }}>
             <Text style={{ fontSize: 60, fontWeight: 'bold', marginLeft: 20, marginRight: 5 }}>553.33</Text>
-            <Image source={require('../assets/images/r.png')} style={{ height: 50, width: 50, opacity: 0.3 }}></Image>
+            <Image source={require('../assets/images/vitochka.png')} style={{ height: 50, width: 50, opacity: 0.3 }}></Image>
           </View>
         </View>
         <Text style={{ marginLeft: 16, marginTop: 15, fontSize: 20, fontWeight: 'bold', color: 'black' }}>Последние транзакции</Text>

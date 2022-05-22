@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Platform, StyleSheet, TextInput, Image } from 'react-native';
+import { Platform, StyleSheet, TextInput, Image, Pressable } from 'react-native';
 
 import { Text, View } from '../components/Themed';
 import TransactionCell from '../components/TransactionCell';
@@ -20,17 +20,27 @@ export default function BankAccount() {
             <Text style={{ fontSize: 60, fontWeight: 'bold', marginLeft: 20, marginRight: 5 }}>553.33</Text>
             <Image source={require('../assets/images/vitochka.png')} style={{ height: 50, width: 50, opacity: 0.3 }}></Image>
           </View>
+          <View></View>
         </View>
+        <Pressable style={{
+          height: 60, width: '90%', backgroundColor: '#1d1346', alignSelf: 'center', flexDirection: 'row',
+          justifyContent: 'center', alignItems: 'center', borderRadius: 5
+        }}>
+          <Text style={{ color: 'white', fontWeight: '500', fontSize: 20, marginRight: 10 }}>Пополнить</Text>
+          <Image source={require('../assets/images/cbp.png')} style={{
+            height: 65, resizeMode: 'contain', width: 65,
+          }}></Image>
+        </Pressable>
         <Text style={{ marginLeft: 16, marginTop: 15, fontSize: 20, fontWeight: 'bold', color: 'black' }}>Последние транзакции</Text>
         <TransactionCell amount={23.3} type={TransactionType.withdraw} description={'Стандартное описание'} />
-        <TransactionCell amount={234.3} type={TransactionType.refill} description={'Стандартное описание'}/>
-        <TransactionCell amount={223.3} type={TransactionType.refill} description={'Стандартное описание'}/>
-        <TransactionCell amount={2423.3} type={TransactionType.withdraw} description={'Стандартное описание'}/>
-        <TransactionCell amount={23.3} type={TransactionType.withdraw} description={'Стандартное описание'}/>
-        <TransactionCell amount={253.3} type={TransactionType.refill} description={'Стандартное описание'}/>
-        <TransactionCell amount={23.3} type={TransactionType.withdraw} description={'Стандартное описание'}/>
-        <TransactionCell amount={23.3} type={TransactionType.refill} description={'Стандартное описание'}/>
-        <TransactionCell amount={23.3} type={TransactionType.withdraw} description={'Стандартное описание'}/>
+        <TransactionCell amount={234.3} type={TransactionType.refill} description={'Стандартное описание'} />
+        <TransactionCell amount={223.3} type={TransactionType.refill} description={'Стандартное описание'} />
+        <TransactionCell amount={2423.3} type={TransactionType.withdraw} description={'Стандартное описание'} />
+        <TransactionCell amount={23.3} type={TransactionType.withdraw} description={'Стандартное описание'} />
+        <TransactionCell amount={253.3} type={TransactionType.refill} description={'Стандартное описание'} />
+        <TransactionCell amount={23.3} type={TransactionType.withdraw} description={'Стандартное описание'} />
+        <TransactionCell amount={23.3} type={TransactionType.refill} description={'Стандартное описание'} />
+        <TransactionCell amount={23.3} type={TransactionType.withdraw} description={'Стандартное описание'} />
       </ScrollView>
     </View>
   );

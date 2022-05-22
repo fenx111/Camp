@@ -27,7 +27,7 @@ export default function TabTwoScreen({ navigation }: RootTabScreenProps<'TabTwo'
 
         </ScrollView>
 
-        <Text style={{ marginTop: 20, marginLeft: 16, fontSize: 20, fontWeight: 'bold', color: 'black' }}>Популярное</Text>
+        <Text style={{ marginTop: 20, marginLeft: 16, fontSize: 20, fontWeight: 'bold', color: 'black' }}>Новости отряда</Text>
 
         <ScrollView style={{ marginBottom: 10 }} horizontal={true}>
           <Pressable onPress={() => { navigation.push('NewsDetails') }}>
@@ -42,7 +42,7 @@ export default function TabTwoScreen({ navigation }: RootTabScreenProps<'TabTwo'
 
         </ScrollView>
 
-        <Text style={{ marginLeft: 16, fontSize: 20, fontWeight: 'bold', color: 'black', backgroundColor: 'rgba(52, 52, 52, 0.0)' }}>На этих выходных</Text>
+        <Text style={{ marginLeft: 16, fontSize: 20, fontWeight: 'bold', color: 'black', backgroundColor: 'rgba(52, 52, 52, 0.0)' }}>Новости лагеря</Text>
         <View style={{
           justifyContent: 'center',
           alignItems: 'center',

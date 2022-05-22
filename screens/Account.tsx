@@ -46,15 +46,11 @@ export default function Account({ navigation }: RootTabScreenProps<'TabOne'>) {
             <Image source={require('../assets/images/xhdpi.png')} style={{ height: 25, width: 25, marginLeft: 70, marginRight: 10, opacity: 0.3 }}></Image>
           </Pressable>
         </View>
-        <View>
+        <View style={{marginHorizontal: 15}}>
           <Text style={{ marginLeft: 16, marginTop: 15, fontSize: 20, fontWeight: 'bold', color: 'black' }}>Настройки</Text>
-          <View style={{paddingTop: 15, paddingBottom: 15, paddingLeft: 20, paddingRight: 20, borderRadius: 20, backgroundColor: '#fff'}}>
-            <SettingsRow name={'Оценка мероприятий'} action={openReview}></SettingsRow>
-            <View style={{height: 1, backgroundColor: 'lightgray', opacity: 0.4}}></View>
-            <SettingsRow name={'Конфиденциальность'} action={console.log}></SettingsRow>
-            <View style={{height: 1, backgroundColor: 'lightgray', opacity: 0.4}}></View>
-            <SettingsRow name={'Медкарта'} action={openMedicineCard}></SettingsRow>
-          </View>
+          <SettingsRow name={'Оценка мероприятий'} action={openReview}></SettingsRow>
+          <SettingsRow name={'Конфиденциальность'} action={console.log}></SettingsRow>
+          <SettingsRow name={'Медкарта'} action={openMedicineCard}></SettingsRow>
 
         </View>
       </ScrollView>

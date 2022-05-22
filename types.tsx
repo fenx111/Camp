@@ -20,6 +20,7 @@ export type RootStackParamList = {
   NewsDetails: undefined;
   MedicalCard: undefined;
   MarkActivities: undefined;
+  Map: undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<

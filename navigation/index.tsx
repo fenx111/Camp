@@ -16,6 +16,7 @@ import ModalScreen from '../screens/BankAccount';
 import NewsDetails from '../screens/NewsDetails';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import TabOneScreen from '../screens/Account';
+import Map from '../screens/Map';
 import NewsFeed from '../screens/NewsFeed';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import MedicalCard from '../screens/MedicalCard';
@@ -48,6 +49,7 @@ function RootNavigator() {
         <Stack.Screen name="NewsDetails" options={{ title: "Описание мероприятия" }} component={NewsDetails} />
         <Stack.Screen name="MedicalCard" options={{ title: "Медицинская карта" }} component={MedicalCard} />
         <Stack.Screen name="MarkActivities" options={{ title: "Оценивание событий" }} component={MarkActivities} />
+        <Stack.Screen name="Map" options={{ title: "Карта" }} component={Map} />
       </Stack.Group>
     </Stack.Navigator>
   );

@@ -15,13 +15,13 @@ export default function MedicalCard({ navigation }: RootTabScreenProps<'TabOne'>
             <ScrollView>
                 <Text style={{fontSize: 35, fontWeight: 'bold', paddingHorizontal: 16, paddingTop: 10}}>Посыльный</Text>
                 <Text style={{fontSize: 30, paddingHorizontal: 16}}>Петр Олегович</Text>
-                <Text style={{fontSize: 18, fontWeight: 'bold', paddingHorizontal: 16, paddingBottom: 10, paddingTop: 5}}>17 сентября 2006 ( возраст 16)</Text>
+                <Text style={{fontSize: 18, fontWeight: 'bold', paddingHorizontal: 16, paddingBottom: 10, paddingTop: 5}}>17 сентября 2012 ( возраст 10)</Text>
                 <MedicalCardCell type='Заболевания' value='Астма'></MedicalCardCell>
                 <MedicalCardCell type='Аллергические реакции' value='Шоколад'></MedicalCardCell>
                 <MedicalCardCell type='Медикаменты' value='АЦЦ'></MedicalCardCell>
                 <MedicalCardCell type='Группа крови' value='1 положительная'></MedicalCardCell>
-                <MedicalCardCell type='Вес' value='73 кг.'></MedicalCardCell>
-                <MedicalCardCell type='Рост' value='183 см.'></MedicalCardCell>
+                <MedicalCardCell type='Вес' value='53 кг.'></MedicalCardCell>
+                <MedicalCardCell type='Рост' value='153 см.'></MedicalCardCell>
             </ScrollView>
         </View>
     );
